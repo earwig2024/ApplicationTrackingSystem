@@ -8,8 +8,8 @@
     <script src="/application-tracking-system/Sprint_3/scripts/checkForDarkMode.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/application-tracking-system/Sprint_3_failedOne/styles/styles.css">
-    <link rel="stylesheet" href="/application-tracking-system/Sprint_3_failedOne/styles/nav-styles.css">
+    <link rel="stylesheet" href="/application-tracking-system/Sprint_3/styles/styles.css">
+    <link rel="stylesheet" href="/application-tracking-system/Sprint_3/styles/nav-styles.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
