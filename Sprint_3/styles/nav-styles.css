@@ -41,7 +41,7 @@
 
 .logo {
 	width: 120px;
-	content: url("/application-tracking-tool/Sprint_3/images/GRC_Logo_Green.png");
+	content: url("/application-tracking-system/Sprint_3/images/GRC_Logo_Green.png");
 	padding: 0.4rem 0px;
 }
 
@@ -88,7 +88,7 @@
 }
 
 .darkModeToggle img {
-	content: url("/application-tracking-tool/Sprint_3/images/dark-mode.svg");
+	content: url("/application-tracking-system/Sprint_3/images/dark-mode.svg");
 	height: 45px;
 	border-color: var(--grc-green) !important;
 }
@@ -104,7 +104,7 @@
 }
 
 .darkModeToggle:hover img {
-	content: url("/application-tracking-tool/Sprint_3/images/hover-moon.svg");
+	content: url("/application-tracking-system/Sprint_3/images/hover-moon.svg");
 	border-color: white !important;
 }
 
@@ -181,7 +181,7 @@
 }
 
 .darkMode .logo {
-	content: url("/application-tracking-tool/Sprint_3/images/GRC_Logo_White.png");
+	content: url("/application-tracking-system/Sprint_3/images/GRC_Logo_White.png");
 }
 
 .darkMode .darkModeToggle:hover {
@@ -189,7 +189,7 @@
 }
 
 .darkMode .darkModeToggle img {
-	content: url("/application-tracking-tool/Sprint_3/images/sun.svg");
+	content: url("/application-tracking-system/Sprint_3/images/sun.svg");
 	border-color: white !important;
 }
 
@@ -198,7 +198,7 @@
 }
 
 .darkMode .darkModeToggle:hover img {
-	content: url("/application-tracking-tool/Sprint_3/images/hover-sun.svg");
+	content: url("/application-tracking-system/Sprint_3/images/hover-sun.svg");
 	border-color: var(--ever-green) !important;
 }
 
