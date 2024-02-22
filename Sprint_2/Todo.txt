@@ -1,0 +1,37 @@
+Sprint #2 ToDo List
+As you begin this sprint:
+
+You are encouraged to Copy/Fork all Sprint #1 work and retain the old copies of these files. Start a Sprint #2 directory/area/folder that begins with a copy of all Sprint #1 items (and you do not lose any Sprint #1 work that might be useful later)
+You are encouraged to set up and use PHPStorm to create code and have it automatically push to your domain(s) with PHP installed. PHP will not run on your local machine unless you install an interpreter.
+PHP Fundamentals:
+
+Learning Spike: ALL members of your team should complete this PHP Essentials Training early in the Sprint
+Create an AdminAnnouncement page/form
+
+Title*
+Job or Internship Radio Button*
+Location Text Box*
+Employer Text Box*
+More information Text Area
+URL*
+email address of whom to send to*
+When the form above is submitted, create a page that displays the information (like a recept.php page) as well as sending it to the email address above, formatted as an HTML email
+Create an AdminDashboard page/form
+
+Follow the basic styles and setup of the normal user dashboard
+The admin dashboard should have an additional area showing the users, including:
+name  |  email  |  view  |  delete
+(you can make up a few fictional users, following the structure shown above)
+This page does not currently have any actions or information to submit, just a layout with links
+Update the Sign Up Form and Contact Form
+
+Each form should direct to its own receipt-style page that shows the field name and information entered for each field
+Incorporate some style onto these pages, as well as navigation
+If a user navigates to there receipt-style and the form was not filled out ($_GET or $_POST do not contain the required fields) the display a message that asks the user to fill out the form: don't give an empty receipt or send an email
+The Contact Form Receipt page should email tschrock@greenriver.edu (test this using another email address, then switch to this email only at the end of the Sprint!)
+Incorporate Feedback from Client:
+
+Complete simple style/usability tweaks as mentioned in your presentation by the instructor and/or client
+Adjust the New Application Status Field: consider a drop-down or easier way to pick a status
+Also on the New Application page, add an optional, Job Description text area
+Also on the New Application page, add a required Employer Name text input, near the top

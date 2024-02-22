@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApplicationManagerDashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/dashboard-style.css">
+    <link rel="stylesheet" href="/styles/nav-styles.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</head>
+<body class="d-flex flex-column">
+    <div id="navbarPlaceholder"></div>
+
+    <div class="container-fluid d-flex settings justify-content-between pt-4 px-3 px-md-5">
+        <a class="h-100 icon-link icon-link-hover text-decoration-none justify-self-center fw-bold"
+            style="--bs-icon-link-transform: rotate(90deg);"
+            href="https://earwig.greenriverdev.com/pages/Sprint_1/UpdateAccountSettings.html">
+            Update Account Settings
+            <img class="bi" src="./images/settings.svg" alt="">
+        </a>
+        <button onclick="darkMode()" class="btn custom-btn">Dark Mode</button>
+    </div>
+    <div class="content mt-5 mx-3 container-fluid d-flex flex-column align-self-center align-self-lg-auto flex-lg-row-reverse justify-content-lg-end">
+        <div class="reminders px-3 d-flex flex-column col-lg-3">
+            <div class="row align-self-center align-self-lg-auto">
+                <h1>Reminders</h1>
+            </div>
+            <div class="mt-3 col-sm-8 col-lg-12 align-self-sm-center d-flex">
+                <div class="col-9">
+                    <ul class="w-100">
+                        <li class="text-truncate list-item">Follow up with xyz</li>
+                        <li class="text-truncate list-item ">3 Incomplete Applications</li>
+                        <li class="text-truncate list-item ">This is a test</li>
+                    </ul>
+                </div>
+                <div class="col-3 d-flex flex-column align-content-end flex-wrap">
+                    <span style="margin-bottom: 15px;" class="muted d-inline-block border-dark-subtle border-start ps-2">View</span>
+                    <span style="margin-bottom: 15px;"  class="muted d-inline-block border-dark-subtle border-start ps-2">View</span>
+                    <span style="margin-bottom: 15px;"  class="muted d-inline-block border-dark-subtle border-start ps-2">View</span>
+                </div>
+            </div>
+            <div class="row">
+                <h3 class="text-center mt-3">
+                    <a class="mx-auto icon-link icon-link-hover" href="https://www.linkedin.com/">
+                    Find More Oppertunities
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                            d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8m-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5" />
+                        </svg>
+                    </a>
+                </h3>
+            </div>
+        </div>
+
+        <div class="col-lg-1 my-4"></div>
+
+        <div class="apps d-flex flex-column px-3 ps-lg-0 ms-lg-4 col-lg-7">
+            <div class="row align-self-center align-self-lg-auto">
+                <h1 class="d-none d-lg-block">Recent Applications</h1>
+                <h1 class="d-lg-none">Applications</h1>
+            </div>
+            <div class="row mt-3 border-bottom labels">
+                <div class="col-6 me-auto d-md-flex align-items-center">
+                    <span class="col-4 d-none d-md-inline">Date</span>
+                    <span>Title</span>
+                </div>
+                <div class="col-6">
+                    <span>Status</span>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-6 d-flex align-items-center">
+                    <span class="col-4 d-none d-md-flex">1/1/24</span>
+                    <span class="d-inline-block text-truncate col-md-6">
+                        Front End Software Engineer
+                    </span>
+                </div>
+                <div class="col-6 d-flex">
+                    <div class="col-8">
+                        <span style="color: var(--gator-green);">Complete</span>
+                    </div>
+                    <div class="col-4 justify-content-end d-flex icons">
+                        <a class="me-2" href="/pages/edit-app.html"><img class="edit" alt="Edit This Application"></a>
+                        <a href="/pages/edit-app.html"><img class="trash" alt="Edit This Application"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-6 d-flex align-items-center">
+                    <span class="col-4 d-none d-md-flex">12/11/23</span>
+                    <span class="d-inline-block text-truncate col-md-6">
+                        DevOps Engineer
+                    </span>
+                </div>
+                <div class="col-6 d-flex">
+                    <div class="col-8">
+                        <span style="color: var(--sunrise-orange);">Incomplete</span>
+                    </div>
+                    <div class="col-4 justify-content-end d-flex icons">
+                        <a class="me-2" href="/pages/edit-app.html"><img class="edit" alt="Edit This Application"></a>
+                        <a href="/pages/edit-app.html"><img class="trash" alt="Edit This Application"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-6 d-flex align-items-center">
+                    <span class="col-4 d-none d-md-flex">8/4/23</span>
+                    <span class="d-inline-block text-truncate col-md-6">
+                        Database Administrator
+                    </span>
+                </div>
+                <div class="col-6 d-flex">
+                    <div class="col-8">
+                        <span style="color: var(--gator-green);">Complete</span>
+                    </div>
+                    <div class="col-4 justify-content-end d-flex icons">
+                        <a class="me-2" href="/pages/edit-app.html"><img class="edit" alt="Edit This Application"></a>
+                        <a href="/pages/edit-app.html"><img class="trash" alt="Edit This Application"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-6 d-flex align-items-center">
+                    <span class="col-4 d-none d-md-flex">1/3/24</span>
+                    <span class="d-inline-block text-truncate col-md-6">
+                        Back End Software Engineer
+                    </span>
+                </div>
+                <div class="col-6 d-flex">
+                    <div class="col-8">
+                        <span style="color: var(--gator-green);">Complete</span>
+                    </div>
+                    <div class="col-4 justify-content-end d-flex icons">
+                        <a class="me-2" href="/pages/edit-app.html"><img class="edit" alt="Edit This Application"></a>
+                        <a href="/pages/edit-app.html"><img class="trash" alt="Edit This Application"></a>
+                    </div>
+                </div>
+            </div>
+                <a style="width: max-content;" class="mt-5 text-decoration-none text-center add btn add-btn align-self-center"
+                    class="icon-link icon-link-hover text-decoration-none justify-content-center fw-bold"
+                    href="https://earwig.greenriverdev.com/pages/Sprint_1/NewApplicationForm.html">
+                    Add New Application
+                </a>
+        </div>
+    </div>
+    <footer class="summary mt-lg-5 mt-5 pt-4 text-center text-lg-start">
+            <h2 class="align-self-center container p-4">
+                Welcome to the Green River College Software Development Application Tracking Tool (ATT)
+            </h2>
+                <div class="container p-4">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                            <h5 class="text-uppercase fw-bold">What is this?</h5>
+                            <p>
+                                Welcome to the Green River College Software Development Application Tracking Tool (ATT). 
+                                The purpose of this tool is to provide a centralized place to track your job/internship 
+                                applications that can be helpful in your application journey!
+                            </p>
+                        </div>
+                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                            <h5 class="text-uppercase fw-bold">Learn about the green river software dept.</h5>
+            
+                            <p>
+                                Affordable tuition, instructors who care, access to tech industry mentors, and project-based learning make our applied
+                                bachelor’s program a popular destination for computing majors throughout the Seattle-Tacoma region. This degree prepares
+                                graduates for high-demand jobs such as software developer, web developer, software developer in test, and quality
+                                assurance (QA) analyst.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+                    <span class="fw-bold">Extra Resources: </span>
+                    <a href="https://www.linkedin.com/">LinkedIn.com</a>
+                    <span>|</span>
+                    <a href="https://www.indeed.com/">Indeed.com</a>
+                    <span>|</span>
+                    <a href="https://lensa.com/">Lensa.com</a>
+                </div>
+    </footer>
+    <script>
+        window.onload = async () => {
+            let navLoc = "https://www.earwig.greenriverdev.com/navbar.html"
+            try {
+                let res = await fetch("./navbar.html", {
+                    method: 'GET',
+                    headers: {
+                      "content-type": "text/html"  
+                    }
+                })
+                document.getElementById("navbarPlaceholder").innerHTML = await res.text() 
+
+
+            // This is entirely for development purposes
+            // This will only throw if someone moved the navbar location to somewhere else
+            } catch (err) {
+                alert(`Navbar isn't located at ${navLoc}`)
+            }
+        }
+
+        function darkMode() {
+            document.body.classList.toggle('darkMode')
+            document.getElementById("toggler-button").classList.toggle('navbar-dark')
+        }
+    </script>
+</body>
+</html>

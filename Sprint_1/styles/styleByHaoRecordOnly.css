@@ -1,0 +1,36 @@
+/*@font-face {*/
+/*    font-family: "BigNoodleTilting";*/
+/*    src:*/
+/*        local("BigNoodleTilting"),*/
+/*        url("../fonts/big_noodle_titling.ttf") format("truetype")*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: "AvenirNextLTPro";*/
+/*    src: url("../fonts/AvenirNextLTPro-Regular.ttf");*/
+/*    font-weight: normal;*/
+/*}*/
+
+/*@font-face {*/
+/*        font-family: "AvenirNextLTPro";*/
+/*        src: url("../fonts/AvenirNextLTPro-Medium.ttf");*/
+/*        font-weight:bold;*/
+/*}*/
+/*.h1title{*/
+/*    font-family: "BigNoodleTilting"; !* Use the exact font-family name *!*/
+/*    color: #525252 ;*/
+/*}*/
+/*.title{*/
+/*    font-family: "AvenirNextLTPro";*/
+/*    font-weight: bold;*/
+/*    color:#006225;*/
+/*}*/
+/*.container{*/
+/*    font-family:"AvenirNextLTPro";*/
+/*    font-weight: normal;*/
+/*    color:#373D3F*/
+/*}*/
+/*:root {*/
+/*    --grc-green: #006225;*/
+/*    --section-gray: #525252;*/
+/*}*/

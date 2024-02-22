@@ -1,0 +1,10 @@
+New Application Form
+
+Name of Role*
+Job Description URL* Do i need to add the job link over here?
+Date of Application* (use JS to default to today)
+Radio Buttons for Status*: Need to Apply, Applied, Interviewing, Rejected, Accepted, Inactive/Expired
+Updates text area: Who have you spoken with interviewed? Contact Info?
+Follow up date*: (use JS to default to 2 weeks from today)
+This form should submit to vardump.php
+

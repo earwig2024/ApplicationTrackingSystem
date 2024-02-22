@@ -1,0 +1,367 @@
+@font-face {
+	font-family: "BigNoodleTilting";
+	src: url("../fonts/big_noodle_titling.ttf");
+}
+
+@font-face {
+	font-family: "AvenirNextLTPro";
+	src: url("../fonts/AvenirNextLTPro-Regular.ttf");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "AvenirNextLTPro";
+	src: url("../fonts/AvenirNextLTPro-Medium.ttf");
+	font-weight: bold;
+}
+
+.icon-link {
+    text-decoration-color: initial;
+}
+
+:root {
+	--section-gray: #525252;
+	--small-text-primary: #d7d7d7;
+	--white: #ffff;
+	/* primary Colors */
+	--gator-green: #6cb443;
+	--grc-green: #2c882b;
+	/* accent colors */
+	--ever-green: #006225;
+	--leaf-green: #bbd416;
+	--sunrise-orange: #d14900;
+	--sky-blue: #418fde;
+	--pine-cone: #333333;
+}
+
+.custom-btn {
+	background-color: var(--grc-green);
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+	background-color: var(--ever-green);
+	color: white;
+}
+
+.add-btn {
+	background-color: var(--gator-green);
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+	background-color: var(--grc-green);
+	color: white;
+}
+
+/* Styles for dark mode */
+
+.darkMode h1 {
+	color: white;
+}
+
+.darkMode .apps span,
+.darkMode .reminders {
+    color: var(--small-text-primary);
+}
+
+.darkMode .reminders {
+	color: white;
+}
+
+.darkMode .reminders li {
+	color: var(--gator-green);
+}
+/* Background */
+.darkMode {
+	background-color: var(--pine-cone);
+	transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+/* Nav bar */
+.darkMode .navbar {
+	background-color: var(--section-gray); /* Nav background */
+	border-color: var(--sunrise-orange) !important; /* bottom border color */
+	color: var(--gator-green) !important; /* Nav font color */
+	transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.darkMode .border-dark,
+.darkMode .navbar-brand,
+.darkMode .navbar-nav .nav-link {
+	color: var(--gator-green) !important; /* Nav font color */
+	transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.darkMode .settings a {
+	color: white;
+}
+
+.darkMode .settings img {
+	filter: brightness(100);
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-menu {
+	background-color: var(
+		--section-gray
+	) !important; /* Set your desired dropdown menu background color */
+}
+.navbar-nav .nav-item.dropdown .dropdown-item {
+	color: var(
+		--white
+	) !important; /* Set your desired dropdown item text color */
+}
+.navbar-nav .nav-item.dropdown .dropdown-item:hover {
+	color: var(
+		--white
+	) !important; /* Set your desired dropdown item hover text color */
+	background-color: var(
+		--gator-green
+	) !important; /* Set your desired dropdown item hover background color */
+}
+
+/* Button colors */
+.darkMode .custom-btn:hover {
+	background-color: var(--gator-green); /* Button background color */
+	color: white; /* Text inside button color */
+	transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.darkMode .add-btn {
+	color: white;
+	background-color: var(--grc-green);
+}
+
+.darkMode .add-btn:hover {
+	background-color: var(--gator-green);
+	color: white;
+	transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.darkMode .reminders h3 a {
+	color: var(--grc-green);
+}
+
+.darkMode .apps .labels span {
+	color: var(--grc-green);
+}
+
+.darkMode .apps .edit {
+	content: url("../images/dark-edit.svg");
+}
+
+.darkMode .apps .trash {
+	content: url("../images/dark-trash.svg");
+}
+
+.darkMode .apps .add img {
+	content: url("../images/dark-plus.svg");
+}
+
+.darkMode .summary {
+	background-color: var(--ever-green);
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.darkMode .summary h2 {
+	color: var(--gator-green);
+}
+
+.darkMode .summary h5,
+.darkMode .summary p,
+.darkMode .summary span,
+.darkMode .summary a {
+	color: white;
+}
+
+.settings a {
+	color: var(--section-gray);
+}
+
+html,
+body {
+	overflow-x: hidden;
+	height: 100%;
+}
+/* border-bottom border-dark */
+
+h1 {
+	color: var(--section-gray);
+}
+
+* {
+	font-family: "AvenirNextLTPro";
+}
+
+h1,
+h2,
+h3,
+.reminders a {
+	font-family: "BigNoodleTilting";
+}
+
+p {
+	font-weight: normal;
+}
+
+@media (max-width: 700px) {
+	h1 {
+		font-size: 3.5rem;
+	}
+
+	h2 {
+		font-size: 2.6rem;
+	}
+
+	h4 {
+		font-size: 1.2rem;
+	}
+
+	.btn {
+		padding: 6px 10px;
+		font-size: 0.875rem !important;
+	}
+
+	.settings a {
+		font-size: 0.8rem;
+	}
+
+	.reminders li {
+		font-size: 1rem;
+	}
+
+	.reminders span {
+		font-size: 0.8rem;
+	}
+
+	.apps span {
+		font-size: 0.8rem;
+	}
+}
+
+@media (min-width: 701px) {
+	h1 {
+		font-size: 5rem;
+	}
+
+	h2 {
+		font-size: 3.4rem;
+	}
+
+	.reminders li {
+		font-size: 1.1rem;
+		font-weight: bold;
+	}
+
+	.reminders span {
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 991px) {
+    .reminders h3 a {
+		font-size: 1.8rem;
+	}
+}
+
+@media (min-width: 992px) and (max-width:1250px) {
+    .reminders h3 a {
+		font-size: 1.5rem;
+	}
+}
+
+@media (min-width:1251px) {
+    .reminders h3 a {
+		font-size: 2rem;
+	}
+}
+
+.reminders p,
+.reminders li,
+.reminders span {
+	font-weight: bold;
+}
+
+.reminders h3 a {
+	color: var(--ever-green);
+}
+
+.reminders li {
+	color: var(--grc-green);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	list-style-position: inside;
+}
+
+.reminders ul {
+	margin: 0;
+	padding: 0;
+}
+
+.reminders .list-item {
+	margin-bottom: 15px;
+	list-style-image: url("../images/BulletPoint.svg");
+}
+
+.apps .labels span {
+	font-weight: normal;
+	color: var(--ever-green);
+}
+
+.apps span {
+	color: var(--section-gray);
+}
+
+.apps .labels {
+	border-color: var(--bs-dark-border-subtle);
+}
+
+.apps .icons a {
+	transition: 0.2s all;
+}
+.apps .icons a:hover {
+	transform: scale(1.2);
+}
+
+.apps .edit {
+	content: url("../images/edit.svg");
+}
+
+.apps .trash {
+	content: url("../images/trash.svg");
+}
+
+.apps .add img {
+	content: url("../images/plus.svg");
+}
+
+.summary {
+	background-color: var(--gator-green);
+}
+
+.summary h2 {
+	color: var(--ever-green);
+}
+
+.summary h4 {
+	font-weight: bold;
+}
+
+.summary p,
+.summary span,
+.summary a {
+	color: var(--bs-body-color);
+}
+
+footer {
+	flex-shrink: 0;
+}

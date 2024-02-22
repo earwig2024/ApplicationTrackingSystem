@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "BigNoodleTilting";
+    src:
+            local("BigNoodleTilting"),
+            url("../fonts/big_noodle_titling.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "AvenirNextLTPro";
+    src: url("../fonts/AvenirNextLTPro-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "AvenirNextLTPro";
+    src: url("../fonts/AvenirNextLTPro-Medium.ttf");
+    font-weight:bold;
+}
+:root {
+    --section-gray: #525252;
+    --black: #000000;
+    /* primary Colors */
+    --gator-green: #6cb443;
+    --grc-green: #006225;
+    /* accent colors */
+    --leaf-green: #BBD416;
+    --sunrise-orange: #D14900;
+    --sky-blue: #418FDE;
+    --pine-cone: #333333;
+}
+
+.contact-header{
+    font-family: 'BigNoodleTilting';
+    color: var(--grc-green);
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    color: var(--grc-green);
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.form-group hr {
+    margin-top: 0px; 
+    margin-bottom: 10px;
+}
+
+.custom-btn {
+    background-color: var(--gator-green);
+    color: #fff; 
+    border: none;
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.custom-btn:hover {
+    background-color: var(--grc-green);
+    color: #fff; 
+}
+
+.container{
+    font-family:"AvenirNextLTPro";
+    font-weight: normal;
+    color:#373D3F
+}
+
+.title{
+    font-family: "AvenirNextLTPro";
+    color:#006225;
+    border-bottom:1px solid rgba(0,0,0,0.1);}

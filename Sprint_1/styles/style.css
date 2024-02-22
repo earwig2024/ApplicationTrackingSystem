@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "BigNoodleTilting";
+    src: local("BigNoodleTilting"), url("../fonts/big_noodle_titling.ttf") format("woff");
+}
+
+@font-face {
+    font-family: "AvenirNextLTPro";
+    src: local("AvenirNextLTPro"), url("../fonts/AvenirNextLTPro-Regular.ttf") format("woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "AvenirNextLTPro";
+    src: local("../fonts/AvenirNextLTPro-Medium.ttf") format("woff");
+    font-weight: bold;
+}
+
+
+:root {
+    --section-gray: #525252;
+    --white: #ffff;
+    /* primary Colors */
+    --gator-green: #6cb443;
+    --grc-green: #2C882B;
+    /* accent colors */
+    --ever-green: #006225;
+    --leaf-green: #BBD416;
+    --sunrise-orange: #D14900;
+    --sky-blue: #418FDE;
+    --pine-cone: #333333;
+}
+
+.contact-header {
+    font-family: 'BigNoodleTilting';
+    color: var(--grc-green)
+}    
+.form-group label {
+    color: black;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+}
+.custom-btn {
+    background-color: var(--grc-green);
+    color: #fff; 
+    border: none;
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+.custom-btn:hover {
+    background-color: var(--ever-green);
+    color: #fff; 
+}
+
+/* Styles for dark mode */
+
+/* Background */
+.darkMode {
+    background-color: var(--pine-cone);
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+/* Nav bar */
+.darkMode .navbar,
+.darkMode .border-dark,
+.darkMode .navbar-brand,
+.darkMode .navbar-nav .nav-link
+ {
+    background-color: var(--section-gray); /* Nav background */ 
+    border-color: var(--sunrise-orange) !important; /* bottom border color */ 
+    color: var(--gator-green) !important; /* Nav font color */
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease; 
+}
+/* Nav bar drop-down menu colors */
+.navbar-nav .nav-item.dropdown .dropdown-menu {
+    background-color: var(--section-gray) !important; /* Set your desired dropdown menu background color */
+}
+.navbar-nav .nav-item.dropdown .dropdown-item {
+    color:  var(--white)!important; /* Set your desired dropdown item text color */
+}
+.navbar-nav .nav-item.dropdown .dropdown-item:hover {
+    color: var(--white)!important; /* Set your desired dropdown item hover text color */
+    background-color: var(--gator-green) !important; /* Set your desired dropdown item hover background color */
+}
+/* Form title font color */
+.darkMode .contact-header{
+    color: var(--gator-green);
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+    
+}
+/* HR line that is under the form title */
+.darkMode hr {
+    border-color: var(--sunrise-orange);
+    opacity: 1;
+}
+
+/*Form label font colors*/
+.darkMode .form-group label{
+    color: var(--white);
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+
+}
+/* Form input colors */
+.darkMode .form-group textarea,
+.darkMode .form-group input {
+    background-color: var(--section-gray); /* Background of field input */
+    color: var(--white); /* Typing text font color*/
+    border: 1px solid var(--gator-green); /* Input border color */
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+/* Dark mode styles for placeholder text */
+.darkMode .form-group textarea::placeholder,
+.darkMode .form-group input::placeholder {
+    color: #a2a2a2; /* Color text for placeholder */
+}
+/* Button colors */
+.darkMode .custom-btn:hover {
+    background-color: var(--gator-green); /* Button background color */
+    color: var(--white); /* Text inside button color */
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+
+
+
+

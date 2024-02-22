@@ -1,0 +1,13 @@
+Hao 1/26/2024
+added nav and footer html files
+added scripts folder 
+added php folder
+added the 'scriptForPhpFiles' without including the code related to the navbar
+    and footer. This is because whenever the PHP page is displayed, an alert 
+    windowalways pops up
+
+script.js：
+Because the validation for greenriver.edu needs work, I have commented it out 
+for now
+
+signin and contact pages' email type is 'text' for me to test my code.
