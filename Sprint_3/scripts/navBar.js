@@ -6,7 +6,7 @@ window.onload = setNavAndFooter().then(() => {
 
 async function setNavAndFooter() {
     try {
-        let res = await fetch("/pages/Sprint_3/navbar.html", {
+        let res = await fetch("/application-tracking-system/Sprint_3/navbar.html", {
             method: 'GET',
             headers: {
                 "content-type": "text/html"
@@ -20,7 +20,7 @@ async function setNavAndFooter() {
     }
     let footLoc = "https://www.earwig.greenriverdev.com/footer.html";
     try {
-        let res = await fetch("/pages/Sprint_3/footer.html", {
+        let res = await fetch("/application-tracking-system/Sprint_3/footer.html", {
             method: 'GET',
             headers: {
                 "content-type": "text/html"
